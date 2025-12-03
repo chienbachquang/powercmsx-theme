@@ -1,0 +1,55 @@
+{
+  "label": "BitA",
+  "id": "bita",
+  "version": "1.0",
+  "thumbnail": "theme.png",
+  "description": "Custom theme created by BitA",
+  "publish_theme": true,
+  "repository": "github.com",
+  "views": {
+    "header": {
+      "name": "(BitA) Header",
+      "subject": "",
+      "class": "Module",
+      "basename": "header",
+      "linked_file": "%t/include/header.tmpl"
+    },
+    "footer": {
+      "name": "(BitA) Footer",
+      "subject": "",
+      "class": "Module",
+      "basename": "footer",
+      "linked_file": "%t/include/footer.tmpl"
+    },
+    "top-page": {
+      "name": "(BitA) Top Page",
+      "subject": "",
+      "class": "Archive",
+      "basename": "bita_top_page",
+      "linked_file": "%t/index.tmpl",
+      "urlmappings": [
+        {
+          "name": "(BitA) Top Page",
+          "model": "template",
+          "mapping": "index.html",
+          "publish_file": "1"
+        }
+      ]
+    },
+    "js": {
+      "name": "(BitA) JS",
+      "subject": "",
+      "class": "Archive",
+      "basename": "js",
+      "linked_file": "%t/assets/js.tmpl",
+      "urlmappings": [
+        {
+          "name": "(BitA) JS",
+          "model": "template",
+          "mapping": "index.js",
+          "publish_file": "1"
+        }
+      ]
+    }
+  }
+}
