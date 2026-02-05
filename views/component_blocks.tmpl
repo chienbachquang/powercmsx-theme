@@ -1,0 +1,41 @@
+<mt:loop name="components_blocks">
+  <mt:if name="type" eq="Breadcrumb">
+    <mt:include basename="breadcrumb" data="$fields">
+  </mt:if>
+  <mt:if name="type" eq="OpenDiv">
+    <mt:include basename="open-div" class="$class">
+  </mt:if>
+  <mt:if name="type" eq="CloseDiv">
+    <mt:include basename="close-div">
+  </mt:if>
+  <mt:if name="type" eq="H1">
+    <mt:include basename="h1" content="$content" class="$class">
+  </mt:if>
+  <mt:if name="type" eq="AnnouncementH2Title">
+    <mt:include basename="announcement-h2-title" content="$content" class="$class" date="$date">
+  </mt:if>
+  <mt:if name="type" eq="Image">
+    <mt:include basename="image" imageId="$imageId">
+  </mt:if>
+  <mt:if name="type" eq="Space">
+    <mt:include basename="space" height="$height">
+  </mt:if>
+  <mt:if name="type" eq="Paragraph">
+    <mt:include basename="paragraph" content="$content" class="$class">
+  </mt:if>
+  <mt:if name="type" eq="H2">
+    <mt:include basename="h2" content="$content" class="$class">
+  </mt:if>
+  <mt:if name="type" eq="Table">
+    <mt:include basename="table" data="$data" class="$class">
+  </mt:if>
+  <mt:if name="type" eq="TextLink">
+    <mt:include basename="text-link" data="$data" class="$class">
+  </mt:if>
+  <mt:if name="type" eq="Annotation">
+    <mt:include basename="annotation" content="$content" class="$class">
+  </mt:if>
+  <mt:if name="type" eq="BtnOutlineIconOrCaption">
+    <mt:include basename="button" text="$text" caption="$caption" icon="$icon" variant="outline-icon" href="$href" as="$as">
+  </mt:if>
+</mt:loop>

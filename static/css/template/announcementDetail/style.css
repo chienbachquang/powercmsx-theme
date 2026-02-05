@@ -1,0 +1,488 @@
+@charset "UTF-8";@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .newSite [data-media]:not([data-media~=sp]),
+  .newSite .pc-only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .newSite [data-media]:not([data-media~=pc]),
+  .newSite .sp-only {
+    display: none !important;
+  }
+}
+.newSite body {
+  -webkit-text-size-adjust: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #151515;
+  font-weight: 400;
+}
+.newSite img {
+  max-width: 100%;
+  height: auto;
+}
+.newSite * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+.newSite a {
+  text-decoration: none;
+  color: unset;
+}
+.newSite li {
+  list-style-type: none;
+}
+.newSite iframe {
+  border: none;
+  overflow: hidden;
+}
+.newSite button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.newSite input,
+.newSite textarea {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+.newSite hr {
+  border: none;
+  border-top: 1px solid;
+}
+.newSite .base-container {
+  max-width: 67.5rem;
+  padding: 0 2.5rem;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .newSite .base-container {
+    padding: 0 1rem;
+  }
+}
+.newSite .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.newSite .announcementDetail__schedule {
+  margin-top: 5rem;
+}
+.newSite .announcementDetail__scheduleTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 1.875rem 0;
+  border-bottom: 0.125rem solid #999;
+  padding-bottom: 0.625rem;
+}
+.newSite .announcementDetail__scheduleTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.newSite .announcementDetail__scheduleRow {
+  border-bottom: 0.0625rem solid #fff;
+}
+.newSite .announcementDetail__scheduleHeader {
+  background-color: #666;
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  font-weight: normal;
+}
+.newSite .announcementDetail__scheduleHeader:not(:last-child) {
+  border-right: 0.0625rem solid #fff;
+}
+.newSite .announcementDetail__scheduleCell {
+  background-color: #e5e5e5;
+  padding: 0.625rem 1.25rem;
+  vertical-align: middle;
+}
+.newSite .announcementDetail__scheduleCell:not(:last-child) {
+  border-right: 0.0625rem solid #fff;
+}
+.newSite {
+  /* -----------------------------------------
+    2. Big Picture
+  ----------------------------------------- */
+}
+.newSite .announcementDetail__scheduleBanner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  background-color: #f0f0f0; /* Placeholder */
+}
+.newSite {
+  /* -----------------------------------------
+    3. Extra Info (Rich Text Content)
+  ----------------------------------------- */
+}
+.newSite .announcementDetail__scheduleExtraInfo {
+  font-size: 0.875rem;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 2.5rem;
+}
+.newSite {
+  /* Target generic paragraphs from RTE */
+}
+.newSite .announcementDetail__scheduleExtraInfo p {
+  margin: 0 0 0.9375rem 0;
+}
+.newSite {
+  /* Target links from RTE */
+}
+.newSite .announcementDetail__scheduleExtraInfo a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+}
+.newSite {
+  /* Automatically add the box icon after every link in this section */
+}
+.newSite .announcementDetail__scheduleExtraInfo a[target=_blank]::after {
+  content: "";
+  margin-left: 0.25rem;
+  display: inline-block;
+  width: 1.125rem;
+  height: 0.875rem;
+  margin-left: 0.375rem;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyMiAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDBIMkMwLjkgMCAwIDAuOSAwIDJWMTZDMCAxNy4xIDAuOSAxOCAyIDE4SDIwQzIxLjEgMTggMjIgMTcuMSAyMiAxNlYyQzIyIDAuOSAyMS4xIDAgMjAgMFpNMjAgMTZIMlYySDEyVjZIMjBWMTZaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -0.0625rem;
+}
+.newSite .announcementDetail__scheduleVisualImage {
+  width: 100%;
+}
+
+.newSite .announcementDetail__guide {
+  margin-top: 6.25rem;
+}
+.newSite .announcementDetail__guideTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.125rem solid #333;
+}
+.newSite {
+  /* Intro section */
+}
+.newSite .announcementDetail__guideIntro {
+  margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.newSite .announcementDetail__guideIntro ul {
+  padding-left: 1.25rem;
+}
+.newSite .announcementDetail__guideIntroBullet::before {
+  content: "● ";
+  margin-right: 0.5rem;
+}
+.newSite {
+  /* Cards container */
+}
+.newSite .announcementDetail__guideCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.875rem;
+}
+.newSite {
+  /* Card */
+}
+.newSite .announcementDetail__guideCard {
+  min-width: calc(50% - 0.625rem);
+  max-width: 100%;
+  border: 0.125rem solid #999;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: white;
+  text-decoration: none;
+  color: #333;
+}
+.newSite .announcementDetail__guideCard:hover {
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.newSite {
+  /* Card icon */
+}
+.newSite .announcementDetail__guideCardIcon {
+  flex-shrink: 0;
+  width: 3.125rem;
+  height: 3.125rem;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: #666;
+  overflow: hidden;
+}
+.newSite .announcementDetail__guideCardIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.newSite {
+  /* Card content */
+}
+.newSite .announcementDetail__guideCardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.newSite {
+  /* Card title */
+}
+.newSite .announcementDetail__guideCardTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+.newSite {
+  /* Card description */
+}
+.newSite .announcementDetail__guideCardDescription {
+  font-size: 0.8125rem;
+  color: #666;
+  line-height: 1.4;
+}
+.newSite {
+  /* Card arrow */
+}
+.newSite .announcementDetail__guideCardArrow {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  color: #999;
+  align-self: center;
+}
+.newSite {
+  /* Full width card modifier */
+}
+.newSite .announcementDetail__guideCard--full {
+  grid-column: 1/-1;
+}
+
+.newSite .announcementDetail__loggingSteps {
+  margin-top: 3.75rem;
+}
+.newSite .announcementDetail__loggingStepsTitle {
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin: 0 0 1.5625rem 0;
+  border-bottom: 0.125rem solid #999;
+  padding-bottom: 0.625rem;
+}
+.newSite {
+  /* Step Chart Image */
+}
+.newSite .announcementDetail__loggingStepsImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3.125rem;
+}
+.newSite .announcementDetail__loggingStepsSnsDescription {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.5625rem;
+  line-height: 1.5;
+}
+.newSite .announcementDetail__loggingStepsSnsContainer {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  width: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 3.75rem;
+}
+.newSite .announcementDetail__loggingStepsSnsCard {
+  flex: 1;
+  max-width: 23.75rem;
+  border-width: 0.1875rem;
+  border-style: solid;
+  border-radius: 0.9375rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.newSite {
+  /* Modifiers for Card Colors */
+}
+.newSite .announcementDetail__loggingStepsSnsCard--x {
+  border-color: #000;
+}
+.newSite .announcementDetail__loggingStepsSnsCard--line {
+  border-color: #00b900;
+}
+.newSite .announcementDetail__loggingStepsSnsTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0 0.75rem;
+}
+.newSite .announcementDetail__loggingStepsSnsIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #333;
+  display: inline-block;
+}
+.newSite .announcementDetail__loggingStepsSnsDesc {
+  font-size: 0.8125rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+  width: 100%;
+  min-height: 3.75rem;
+  font-weight: 700;
+}
+.newSite .announcementDetail__loggingStepsSnsButton {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 1.875rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 0.9375rem;
+  text-align: center;
+}
+.newSite .announcementDetail__loggingStepsSnsButton--x {
+  background-color: #000;
+  color: #fff;
+}
+.newSite .announcementDetail__loggingStepsSnsButton--line {
+  background-color: #00b900;
+  color: #fff;
+}
+.newSite .announcementDetail__loggingStepsSnsQr {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: #eee;
+  margin: 0.625rem auto 0;
+}
+.newSite {
+  /* 3. Big Picture */
+}
+.newSite .announcementDetail__bigPicture {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+  background-color: #f0f0f0;
+}
+.newSite {
+  /* 4. Extra Info */
+}
+.newSite .announcementDetail__extraInfo {
+  font-size: 0.8125rem;
+  color: #333;
+  line-height: 1.8;
+  border-top: 0.0625rem solid #eee;
+  padding-top: 1.25rem;
+}
+.newSite .announcementDetail__extraInfo p {
+  margin: 0 0 0.9375rem 0;
+}
+.newSite .announcementDetail__extraInfo a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+}
+.newSite .announcementDetail__extraInfo a::after {
+  content: "";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.625rem;
+  border: 0.0625rem solid #000;
+  margin-left: 0.375rem;
+  box-shadow: 0.125rem 0.125rem 0 #fff inset;
+}
+.newSite .announcementDetail__loggingStepsSnsNote {
+  font-size: 0.625rem;
+  color: #666;
+  margin-top: auto;
+}
+
+.newSite.announcementDetail {
+  padding: 5rem 0;
+}
+.newSite .announcementDetail__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.newSite .announcementDetail__banner {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+.newSite .announcementDetail__content {
+  padding-top: 2.5rem;
+}
+.newSite .announcementDetail__content img {
+  width: 100%;
+}
+.newSite .announcementDetail__content a {
+  color: #1e1e1e;
+}
+.newSite .announcementDetail__publishedDate {
+  font-size: 0.875rem;
+}
+.newSite .announcementDetail__excerpt {
+  margin-top: 1.5rem;
+}
+.newSite .announcementDetail__section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding-bottom: 0.625rem;
+  border-bottom: 0.0625rem solid #000;
+}
+.newSite .announcementDetail__section-content {
+  padding: 2.5rem 0;
+}

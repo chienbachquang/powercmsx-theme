@@ -1,0 +1,32 @@
+<mt:ignore>@params:
+- iconUrl
+- title
+- caption
+- variant
+- ctaButton
+- as
+- href
+- text
+- ...
+-</mt:ignore>
+
+<div class="ctaBanner<mt:if name='class'> <mt:var name='class'></mt:if><mt:if name='variant'> ctaBanner--<mt:var name='variant'></mt:if>">
+  <div class="ctaBanner__container">
+    <div class="ctaBanner__main">
+      <mt:if name='iconUrl'>
+        <img class="ctaBanner__icon" src="<mt:var name='iconUrl'>" alt="Icon">
+      </mt:if>
+      <div class="ctaBanner__content">
+        <mt:if name='title'>
+          <mt:include basename='common_components_h4' class='ctaBanner__title' content='$title'>
+        </mt:if>
+        <div class="ctaBanner__caption">
+          <mt:var name='caption' raw>
+        </div>
+      </div>
+    </div>
+    <mt:if name='ctaButton'>
+      <mt:include basename='common_components_button' ctaButton='1' class='ctaBanner__ctaButton'>
+    </mt:if>
+  </div>
+</div>

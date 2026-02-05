@@ -1,0 +1,28 @@
+.newSite.globalNavigation {
+  border-bottom: 0.0625rem solid #D9D9D9;
+}
+.newSite.globalNavigation .globalNavigation__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.newSite.globalNavigation .globalNavigation__menuLink {
+  display: block;
+  color: #151515;
+  text-decoration: none;
+  padding: 1.25rem 2.5rem;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+  transition: color 0.2s;
+  font-weight: 700;
+}
+.newSite.globalNavigation .globalNavigation__menuItem:hover .globalNavigation__menuLink, .newSite.globalNavigation .globalNavigation__menuItem.is-active .globalNavigation__menuLink {
+  color: #007426;
+}
+.newSite.globalNavigation .globalNavigation__menuSeparator {
+  margin: 0 0.3125rem;
+  background-color: #BFBFBF;
+  width: 0.0625rem;
+  height: 1.75rem;
+}

@@ -1,0 +1,45 @@
+<mt:setvartemplate name="tmpl_row" scope="local">
+  <mt:loop name="__value__" hash="1">
+    <mt:var name="__value__" setvar="cell">
+    <mt:var name="cell.is_row_header" setvar="is_row_header">
+    <mt:var name="cell.is_col_header" setvar="is_col_header">
+    <mt:if test="($is_row_header || $is_col_header)">
+      <mt:if name="cell.is_visible" eq="true">
+        <th <mt:if name="cell.colspan"> colspan="<mt:var name="cell.colspan">"</mt:if><mt:if name="cell.rowspan"> rowspan="<mt:var name="cell.rowspan">"</mt:if>><mt:var name="cell.value" escape nl2br="1"></th>
+      </mt:if>
+    <mt:else>
+      <mt:if name="cell.is_visible" eq="true">
+        <td <mt:if name="cell.align" ne="left"> class="text-<mt:var name="cell.align">"</mt:if><mt:if name="cell.colspan"> colspan="<mt:var name="cell.colspan">"</mt:if><mt:if name="cell.rowspan"> rowspan="<mt:var name="cell.rowspan">"</mt:if>><mt:var name="cell.value" escape nl2br="1"></td>
+      </mt:if>
+    </mt:if>
+  </mt:loop>
+</mt:setvartemplate>
+
+<mt:setvartemplate name="tmpl_table" scope="local">
+  <table class="table table-<mt:var name="id">">
+    <mt:loop name="col_width_list">
+      <col class="<mt:var name="label" escape>" style="width: <mt:var name="percent" escape>">
+    </mt:loop>
+
+    <mt:loop name="thead_rows" hash="1">
+      <mt:if name="__first__"><thead></mt:if>
+      <tr>
+        <mt:var name="tmpl_row" note="「行のデータをループして出力」するテンプレートを呼び出す" />
+      </tr>
+      <mt:if name="__last__"></thead></mt:if>
+    </mt:loop>
+
+    <mt:loop name="tbody_rows" hash="1">
+      <mt:if name="__first__"><tbody></mt:if>
+      <tr>
+        <mt:var name="tmpl_row" note="「行のデータをループして出力」するテンプレートを呼び出す" />
+      </tr>
+      <mt:if name="__last__"></tbody></mt:if>
+    </mt:loop>
+  </table>
+</mt:setvartemplate>
+
+<mt:if name="data">
+  <mt:settableblockvars from="data" />
+  <mt:var name="tmpl_table" />
+</mt:if>

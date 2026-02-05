@@ -1,0 +1,52 @@
+<mt:if name='as' eq='button'>
+<button
+  type="button"
+  class="btn<mt:if name='size' eq='large'> btn--large</mt:if><mt:if name='size'> btn--<mt:var name='size'></mt:if><mt:if name='variant'> btn--<mt:var name='variant'></mt:if> <mt:var name='class'>"
+  <mt:if name='isDisabled'>data-disabled="<mt:var name='isDisabled'>"</mt:if>
+  <mt:if name='id'>id="<mt:var name='id'>"</mt:if>
+>
+  <mt:if name='iconUrl'>
+    <img class="btn__icon" src="<mt:var name='iconUrl'>" alt="<mt:var name='text'>" />
+  </mt:if>
+  <mt:if name="icon">
+    <mt:assets type="image" limit="1" id="$icon">
+      <img class="btn__icon" src="<mt:asseturl>" alt="<mt:assetlabel>">
+    </mt:assets>
+  </mt:if>
+  <div class="btn__content">
+    <span class="btn__text"><mt:var name='text' raw></span>
+    <mt:if name='caption'>
+      <span class="btn__caption"><mt:var name='caption' raw></span>
+    </mt:if>
+  </div>
+  <svg class="btn__arrow">
+    <use href="/themes/v1/static/assets/ico_arrow_line_M.svg"></use>
+  </svg>
+</button>
+<mt:else>
+<a
+  href="<mt:var name='href'>"
+  class="btn <mt:if name='size' eq='large'>btn--large</mt:if><mt:if name='size'> btn--<mt:var name='size'></mt:if><mt:if name='variant'> btn--<mt:var name='variant'></mt:if> <mt:var name='class'>"
+  <mt:if name='isDisabled'> data-disabled="<mt:var name='isDisabled'>"</mt:if>
+  <mt:if name='id'> id="<mt:var name='id'>"</mt:if>
+  <mt:if name='target'> target="<mt:var name='target'>"</mt:if>
+>
+  <mt:if name='iconUrl'>
+    <img class="btn__icon" src="<mt:var name='iconUrl'>" alt="<mt:var name='text'>" />
+  </mt:if>
+  <mt:if name="icon">
+    <mt:assets type="image" limit="1" id="$icon">
+      <img class="btn__icon" src="<mt:asseturl>" alt="<mt:assetlabel>">
+    </mt:assets>
+  </mt:if>
+  <div class="btn__content">
+    <span class="btn__text"><mt:var name='text' raw></span>
+    <mt:if name='caption'>
+      <span class="btn__caption"><mt:var name='caption' raw></span>
+    </mt:if>
+  </div>
+  <svg class="btn__arrow">
+    <use href="/themes/v1/static/assets/ico_arrow_line_M.svg"></use>
+  </svg>
+</a>
+</mt:if>

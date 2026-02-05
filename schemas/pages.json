@@ -1,0 +1,39 @@
+{
+  "pages": {
+    "kumiaiin/service": {
+      "name": "kumiaiin/service",
+      "subject": "",
+      "class": "Archive",
+      "basename": "kumiaiin_service",
+      "linked_file": "%t/kumiaiin/service/index.tmpl",
+      "urlmappings": [
+        {
+          "name": "kumiaiin/service",
+          "model": "template",
+          "mapping": "service/index.html",
+          "publish_file": "6"
+        }
+      ],
+      "status": "2",
+      "workspaces": [
+        "/kumiaiin"
+      ]
+    },
+    "zenrosai/csr": {
+      "name": "zenrosai/csr",
+      "subject": "",
+      "class": "Archive",
+      "basename": "zenrosai_csr",
+      "linked_file": "%t/zenrosai/csr/index.tmpl",
+      "urlmappings": [
+        {
+          "name": "zenrosai/csr",
+          "model": "template",
+          "mapping": "zenrosai/csr/index.html",
+          "publish_file": "6"
+        }
+      ],
+      "status": "2"
+    }
+  }
+}

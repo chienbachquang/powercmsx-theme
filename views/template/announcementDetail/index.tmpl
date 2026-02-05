@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><mt:announcementtitle></title>
+  <link rel="stylesheet" href="/themes/v1/static/css/common/common.css" />
+  <link rel="stylesheet" href="/themes/v1/static/css/global/components/header/header.css" />
+  <link rel="stylesheet" href="/themes/v1/static/css/global/components/footer/footer.css" />
+  <link rel="stylesheet" href="/themes/v1/static/css/global/components/sideMenu/sideMenu.css" />
+  <link rel="stylesheet" href="/themes/v1/static/css/global/components/globalNavigation/globalNavigation.css" />
+  <body>
+<mt:include basename='global-header'>
+<mt:include basename='global-global-navigation'>
+<mt:include basename='global-side-menu'>
+<main class="main newSite announcementDetail">
+  <mt:announcementblockedit from_json="components_blocks">
+  <mt:include file="/themes/v1/views/component_blocks.tmpl">
+</main>
+
+<mt:include basename='global-footer'>
+<link rel="stylesheet" href="/themes/v1/static/assets/common.ts" />
+</body>
+</html>
