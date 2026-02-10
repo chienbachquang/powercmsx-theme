@@ -7,6 +7,30 @@
   "component": "ThemeV1",
   "publish_theme": true,
   "views": {
+    "ComponentBlocks": {
+      "name": "ComponentBlocks",
+      "subject": "",
+      "class": "Module",
+      "basename": "component_blocks",
+      "linked_file": "%t/component_blocks.tmpl",
+      "status": "2"
+    },
+    "GlobalVariables": {
+      "name": "GlobalVariables",
+      "subject": "",
+      "class": "Module",
+      "basename": "global_variables",
+      "linked_file": "%t/global_variables.tmpl",
+      "status": "2"
+    },
+    "Row": {
+      "name": "row",
+      "subject": "",
+      "class": "Module",
+      "basename": "row",
+      "linked_file": "%t/common/components/row/row.tmpl",
+      "status": "2"
+    },
     "Annotation": {
       "name": "Annotation",
       "subject": "",
@@ -19,7 +43,7 @@
       "name": "AnnouncementH2Title",
       "subject": "",
       "class": "Module",
-      "basename": "announcement-h2-title",
+      "basename": "announcement_h2_title",
       "linked_file": "%t/common/components/announcementH2Title/announcementH2Title.tmpl",
       "status": "2"
     },
@@ -27,7 +51,7 @@
       "name": "ArticleCard",
       "subject": "",
       "class": "Module",
-      "basename": "article-card",
+      "basename": "article_card",
       "linked_file": "%t/common/components/articleCard/articleCard.tmpl",
       "status": "2"
     },
@@ -35,7 +59,7 @@
       "name": "ArticleList",
       "subject": "",
       "class": "Module",
-      "basename": "article-list",
+      "basename": "article_list",
       "linked_file": "%t/common/components/articleList/articleList.tmpl",
       "status": "2"
     },
@@ -45,6 +69,14 @@
       "class": "Module",
       "basename": "breadcrumb",
       "linked_file": "%t/common/components/breadcrumb/breadcrumb.tmpl",
+      "status": "2"
+    },
+    "BulletText": {
+      "name": "BulletText",
+      "subject": "",
+      "class": "Module",
+      "basename": "bullet_text",
+      "linked_file": "%t/common/components/bulletText/bulletText.tmpl",
       "status": "2"
     },
     "Button": {
@@ -59,7 +91,7 @@
       "name": "CheckText",
       "subject": "",
       "class": "Module",
-      "basename": "check-text",
+      "basename": "check_text",
       "linked_file": "%t/common/components/checkText/checkText.tmpl",
       "status": "2"
     },
@@ -67,7 +99,7 @@
       "name": "CloseDiv",
       "subject": "",
       "class": "Module",
-      "basename": "close-div",
+      "basename": "close_div",
       "linked_file": "%t/common/components/closeDiv/closeDiv.tmpl",
       "status": "2"
     },
@@ -83,7 +115,7 @@
       "name": "ContactAccordion",
       "subject": "",
       "class": "Module",
-      "basename": "contact-accordion",
+      "basename": "contact_accordion",
       "linked_file": "%t/common/components/contactAccordion/contactAccordion.tmpl",
       "status": "2"
     },
@@ -91,7 +123,7 @@
       "name": "CtaBanner",
       "subject": "",
       "class": "Module",
-      "basename": "cta-banner",
+      "basename": "cta_banner",
       "linked_file": "%t/common/components/ctaBanner/ctaBanner.tmpl",
       "status": "2"
     },
@@ -147,7 +179,7 @@
       "name": "LeadText",
       "subject": "",
       "class": "Module",
-      "basename": "lead-text",
+      "basename": "lead_text",
       "linked_file": "%t/common/components/leadText/leadText.tmpl",
       "status": "2"
     },
@@ -155,7 +187,7 @@
       "name": "OpenDiv",
       "subject": "",
       "class": "Module",
-      "basename": "open-div",
+      "basename": "open_div",
       "linked_file": "%t/common/components/openDiv/openDiv.tmpl",
       "status": "2"
     },
@@ -163,7 +195,7 @@
       "name": "PageHeader",
       "subject": "",
       "class": "Module",
-      "basename": "page-header",
+      "basename": "page_header",
       "linked_file": "%t/common/components/pageHeader/pageHeader.tmpl",
       "status": "2"
     },
@@ -179,7 +211,7 @@
       "name": "RelatedLinks",
       "subject": "",
       "class": "Module",
-      "basename": "related-links",
+      "basename": "related_links",
       "linked_file": "%t/common/components/relatedLinks/relatedLinks.tmpl",
       "status": "2"
     },
@@ -195,7 +227,7 @@
       "name": "TextLink",
       "subject": "",
       "class": "Module",
-      "basename": "text-link",
+      "basename": "text_link",
       "linked_file": "%t/common/components/textLink/textLink.tmpl",
       "status": "2"
     },
@@ -203,7 +235,7 @@
       "name": "GlobalFloatingMenu",
       "subject": "",
       "class": "Module",
-      "basename": "global-floating-menu",
+      "basename": "global_floating_menu",
       "linked_file": "%t/global/components/floatingMenu/floatingMenu.tmpl",
       "status": "2"
     },
@@ -211,7 +243,7 @@
       "name": "GlobalFooter",
       "subject": "",
       "class": "Module",
-      "basename": "global-footer",
+      "basename": "global_footer",
       "linked_file": "%t/global/components/footer/footer.tmpl",
       "status": "2"
     },
@@ -219,7 +251,7 @@
       "name": "GlobalGlobalNavigation",
       "subject": "",
       "class": "Module",
-      "basename": "global-global-navigation",
+      "basename": "global_global_navigation",
       "linked_file": "%t/global/components/globalNavigation/globalNavigation.tmpl",
       "status": "2"
     },
@@ -227,7 +259,7 @@
       "name": "GlobalHeader",
       "subject": "",
       "class": "Module",
-      "basename": "global-header",
+      "basename": "global_header",
       "linked_file": "%t/global/components/header/header.tmpl",
       "status": "2"
     },
@@ -235,27 +267,8 @@
       "name": "GlobalSideMenu",
       "subject": "",
       "class": "Module",
-      "basename": "global-side-menu",
+      "basename": "global_side_menu",
       "linked_file": "%t/global/components/sideMenu/sideMenu.tmpl",
-      "status": "2"
-    },
-    "kumiaiin/service/components/anchors": {
-      "name": "kumiaiin/service/components/anchors",
-      "subject": "",
-      "class": "Module",
-      "basename": "kumiaiin_service_components_anchors",
-      "linked_file": "%t/kumiaiin/service/components/anchors/anchors.tmpl",
-      "status": "2",
-      "workspaces": [
-        "/kumiaiin"
-      ]
-    },
-    "kumiaiin/service/components/sectionCard": {
-      "name": "kumiaiin/service/components/sectionCard",
-      "subject": "",
-      "class": "Module",
-      "basename": "kumiaiin_service_components_sectioncard",
-      "linked_file": "%t/kumiaiin/service/components/sectionCard/sectionCard.tmpl",
       "status": "2"
     },
     "Table": {
@@ -266,41 +279,21 @@
       "linked_file": "%t/common/components/table/table.tmpl",
       "status": "2"
     },
-    "kumiaiin/service": {
-      "name": "kumiaiin/service",
+    "template/announcementDetail": {
+      "name": "template/announcementDetail",
       "subject": "",
       "class": "Archive",
-      "basename": "kumiaiin_service",
-      "linked_file": "%t/kumiaiin/service/index.tmpl",
-      "urlmappings": [
-        {
-          "name": "kumiaiin/service",
-          "model": "template",
-          "mapping": "service/index.html",
-          "publish_file": "6"
-        }
-      ],
+      "basename": "template_announcementdetail",
+      "linked_file": "%t/template/announcementDetail/index.tmpl",
       "status": "2",
-      "workspaces": [
-        "/kumiaiin"
-      ]
-    },
-    "zenrosai/csr": {
-      "name": "zenrosai/csr",
-      "subject": "",
-      "class": "Archive",
-      "basename": "zenrosai_csr",
-      "linked_file": "%t/zenrosai/csr/index.tmpl",
       "urlmappings": [
         {
-          "name": "zenrosai/csr",
-          "model": "template",
-          "mapping": "zenrosai/csr/index.html",
-          "publish_file": "6"
+          "name": "Announcement Detail Page",
+          "model": "announcement",
+          "mapping": "announcement/<mt:announcementbasename>.html",
+          "publish_file": "1"
         }
-      ],
-      "status": "2"
+      ]
     }
-  },
-  "component_blocks": {}
+  }
 }

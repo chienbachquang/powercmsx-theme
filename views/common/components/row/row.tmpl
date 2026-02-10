@@ -1,0 +1,22 @@
+<div class="row<mt:if name='gap'> gap-<mt:var name='gap' /></mt:if><mt:if name='gap_x'> gap-x-<mt:var name='gap_x' /></mt:if><mt:if name='gap_y'> gap-y-<mt:var name='gap_y' /></mt:if>">
+  <mt:loop name="containers">
+    <mt:loop name="blocks">
+      <mt:if name="type" eq="Col">
+        <mt:var name="blocks" key="$__index__" setvar="__col__" scope="local" />
+        <div class="col col-<mt:var name="col_size" default="12">">
+          <mt:localvars scope="local">
+            <mt:loop name="__col__.containers">
+              <mt:loop name="blocks">
+                <mt:if name="type" eq="BtnOutlineIconOrCaption">
+                  <mt:include basename="button" text="$text" caption="$caption" icon="$icon" variant="outline-icon"
+                  href="$href" as="$as" class="$class || ''">
+                </mt:if>
+              </mt:loop>
+            </mt:loop>
+          </mt:localvars>
+        </div>
+        <mt:unsetvar name="__col__" />
+      </mt:if>
+    </mt:loop>
+  </mt:loop>
+</div>

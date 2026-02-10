@@ -1,41 +1,49 @@
 <mt:loop name="components_blocks">
+  <mt:var name="components_blocks" key="$__index__" setvar="__block" />
   <mt:if name="type" eq="Breadcrumb">
-    <mt:include basename="breadcrumb" data="$fields">
+    <mt:include basename="breadcrumb" data="$__block.fields">
   </mt:if>
   <mt:if name="type" eq="OpenDiv">
-    <mt:include basename="open-div" class="$class">
+    <mt:include basename="open_div" class="$__block.class">
   </mt:if>
   <mt:if name="type" eq="CloseDiv">
-    <mt:include basename="close-div">
+    <mt:include basename="close_div">
   </mt:if>
   <mt:if name="type" eq="H1">
-    <mt:include basename="h1" content="$content" class="$class">
+    <mt:include basename="h1" content="$__block.content" class="$__block.class">
   </mt:if>
   <mt:if name="type" eq="AnnouncementH2Title">
-    <mt:include basename="announcement-h2-title" content="$content" class="$class" date="$date">
+    <mt:include basename="announcement_h2_title" content="$__block.content" class="$__block.class" date="$__block.date">
   </mt:if>
   <mt:if name="type" eq="Image">
-    <mt:include basename="image" imageId="$imageId">
+    <mt:include basename="image" asset_id="$__block.asset_id">
   </mt:if>
   <mt:if name="type" eq="Space">
-    <mt:include basename="space" height="$height">
+    <mt:include basename="space" height="$__block.height">
   </mt:if>
   <mt:if name="type" eq="Paragraph">
-    <mt:include basename="paragraph" content="$content" class="$class">
+    <mt:include basename="paragraph" content="$__block.content" class="$__block.class">
   </mt:if>
   <mt:if name="type" eq="H2">
-    <mt:include basename="h2" content="$content" class="$class">
+    <mt:include basename="h2" content="$__block.content" class="$__block.class">
   </mt:if>
   <mt:if name="type" eq="Table">
-    <mt:include basename="table" data="$data" class="$class">
+    <mt:include basename="table" data="$__block.table" class="$__block.class">
   </mt:if>
   <mt:if name="type" eq="TextLink">
-    <mt:include basename="text-link" data="$data" class="$class">
+    <mt:include basename="text_link" data="$__block.data" class="$__block.class">
   </mt:if>
   <mt:if name="type" eq="Annotation">
-    <mt:include basename="annotation" content="$content" class="$class">
+    <mt:include basename="annotation" content="$__block.content" class="$__block.class">
   </mt:if>
   <mt:if name="type" eq="BtnOutlineIconOrCaption">
-    <mt:include basename="button" text="$text" caption="$caption" icon="$icon" variant="outline-icon" href="$href" as="$as">
+    <mt:include basename="button" text="$__block.text" caption="$__block.caption" icon="$__block.icon" variant="outline-icon" href="$__block.href" as="$__block.as">
   </mt:if>
+  <mt:if name="type" eq="BulletText">
+    <mt:include basename="bullet_text" content="$__block.content">
+  </mt:if>
+  <mt:if name="type" eq="Row">
+    <mt:include basename="row">
+  </mt:if>
+  <mt:unsetvar name="__block" />
 </mt:loop>

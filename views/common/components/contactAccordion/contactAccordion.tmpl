@@ -19,7 +19,7 @@
           </mt:if>
           <mt:if name='phoneNumber'>
             <div class="contactAccordion__contact">
-              <img class="contactAccordion__contactIcon" src="/themes/v1/static/assets/ico_inquiry_contact.svg" alt="Contact icon" />
+              <img class="contactAccordion__contactIcon" src="<mt:var name='theme_path'>/static/assets/ico_inquiry_contact.svg" alt="Contact icon" />
               <a href="tel:<mt:var name='phoneNumber'>" class="contactAccordion__contactNumber"><b><mt:var name='phoneNumber'></b></a>
               <mt:if name='contactMoreUrl'>
                 <a
@@ -27,7 +27,7 @@
                   class="contactAccordion__contactMore"
                 >
                   <span>ご用件番号について</span>
-                  <img src="/themes/v1/static/assets/ico_plus_circle_m.svg" alt="Arrow Right Icon" />
+                  <img src="<mt:var name='theme_path'>/static/assets/ico_plus_circle_m.svg" alt="Arrow Right Icon" />
                 </a>
               </mt:if>
             </div>
