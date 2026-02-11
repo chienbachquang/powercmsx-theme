@@ -1,24 +1,18 @@
 <mt:include basename="global_variables" />
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="newSite">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><mt:announcementtitle></title>
+  <title><mt:pagetitle></title>
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/common/common.css" />
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/global/components/header/header.css" />
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/global/components/footer/footer.css" />
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/global/components/globalNavigation/globalNavigation.css" />
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/global/components/sideMenu/sideMenu.css" />
   <body>
-<mt:include basename='global_header'>
-<mt:include basename='global_navigation'>
-<mt:include basename='global_side_menu'>
-<main class="main newSite announcementDetail">
-  <mt:announcementblockedit from_json="components_blocks">
-  <mt:include basename="component_blocks">
-</main>
-<mt:include basename='global_footer'>
+<mt:pageblockedit from_json="components_blocks">
+<mt:include basename="component_blocks">
 <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/assets/common.ts" />
 </body>
 </html>

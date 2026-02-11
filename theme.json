@@ -1,299 +1,331 @@
 {
-  "label": "V1",
-  "id": "v1",
-  "version": "1.0",
-  "description": "Custom theme v1",
-  "author": "BitA",
-  "component": "ThemeV1",
-  "publish_theme": true,
-  "views": {
-    "ComponentBlocks": {
-      "name": "ComponentBlocks",
-      "subject": "",
-      "class": "Module",
-      "basename": "component_blocks",
-      "linked_file": "%t/component_blocks.tmpl",
-      "status": "2"
-    },
-    "GlobalVariables": {
-      "name": "GlobalVariables",
-      "subject": "",
-      "class": "Module",
-      "basename": "global_variables",
-      "linked_file": "%t/global_variables.tmpl",
-      "status": "2"
-    },
-    "Row": {
-      "name": "row",
-      "subject": "",
-      "class": "Module",
-      "basename": "row",
-      "linked_file": "%t/common/components/row/row.tmpl",
-      "status": "2"
-    },
-    "Annotation": {
-      "name": "Annotation",
-      "subject": "",
-      "class": "Module",
-      "basename": "annotation",
-      "linked_file": "%t/common/components/annotation/annotation.tmpl",
-      "status": "2"
-    },
-    "AnnouncementH2Title": {
-      "name": "AnnouncementH2Title",
-      "subject": "",
-      "class": "Module",
-      "basename": "announcement_h2_title",
-      "linked_file": "%t/common/components/announcementH2Title/announcementH2Title.tmpl",
-      "status": "2"
-    },
-    "ArticleCard": {
-      "name": "ArticleCard",
-      "subject": "",
-      "class": "Module",
-      "basename": "article_card",
-      "linked_file": "%t/common/components/articleCard/articleCard.tmpl",
-      "status": "2"
-    },
-    "ArticleList": {
-      "name": "ArticleList",
-      "subject": "",
-      "class": "Module",
-      "basename": "article_list",
-      "linked_file": "%t/common/components/articleList/articleList.tmpl",
-      "status": "2"
-    },
-    "Breadcrumb": {
-      "name": "Breadcrumb",
-      "subject": "",
-      "class": "Module",
-      "basename": "breadcrumb",
-      "linked_file": "%t/common/components/breadcrumb/breadcrumb.tmpl",
-      "status": "2"
-    },
-    "BulletText": {
-      "name": "BulletText",
-      "subject": "",
-      "class": "Module",
-      "basename": "bullet_text",
-      "linked_file": "%t/common/components/bulletText/bulletText.tmpl",
-      "status": "2"
-    },
-    "Button": {
-      "name": "Button",
-      "subject": "",
-      "class": "Module",
-      "basename": "button",
-      "linked_file": "%t/common/components/button/button.tmpl",
-      "status": "2"
-    },
-    "CheckText": {
-      "name": "CheckText",
-      "subject": "",
-      "class": "Module",
-      "basename": "check_text",
-      "linked_file": "%t/common/components/checkText/checkText.tmpl",
-      "status": "2"
-    },
-    "CloseDiv": {
-      "name": "CloseDiv",
-      "subject": "",
-      "class": "Module",
-      "basename": "close_div",
-      "linked_file": "%t/common/components/closeDiv/closeDiv.tmpl",
-      "status": "2"
-    },
-    "Collapse": {
-      "name": "Collapse",
-      "subject": "",
-      "class": "Module",
-      "basename": "collapse",
-      "linked_file": "%t/common/components/collapse/collapse.tmpl",
-      "status": "2"
-    },
-    "ContactAccordion": {
-      "name": "ContactAccordion",
-      "subject": "",
-      "class": "Module",
-      "basename": "contact_accordion",
-      "linked_file": "%t/common/components/contactAccordion/contactAccordion.tmpl",
-      "status": "2"
-    },
-    "CtaBanner": {
-      "name": "CtaBanner",
-      "subject": "",
-      "class": "Module",
-      "basename": "cta_banner",
-      "linked_file": "%t/common/components/ctaBanner/ctaBanner.tmpl",
-      "status": "2"
-    },
-    "H1": {
-      "name": "H1",
-      "subject": "",
-      "class": "Module",
-      "basename": "h1",
-      "linked_file": "%t/common/components/h1/h1.tmpl",
-      "status": "2"
-    },
-    "H2": {
-      "name": "H2",
-      "subject": "",
-      "class": "Module",
-      "basename": "h2",
-      "linked_file": "%t/common/components/h2/h2.tmpl",
-      "status": "2"
-    },
-    "H3": {
-      "name": "H3",
-      "subject": "",
-      "class": "Module",
-      "basename": "h3",
-      "linked_file": "%t/common/components/h3/h3.tmpl",
-      "status": "2"
-    },
-    "H4": {
-      "name": "H4",
-      "subject": "",
-      "class": "Module",
-      "basename": "h4",
-      "linked_file": "%t/common/components/h4/h4.tmpl",
-      "status": "2"
-    },
-    "H5": {
-      "name": "H5",
-      "subject": "",
-      "class": "Module",
-      "basename": "h5",
-      "linked_file": "%t/common/components/h5/h5.tmpl",
-      "status": "2"
-    },
-    "Image": {
-      "name": "Image",
-      "subject": "",
-      "class": "Module",
-      "basename": "image",
-      "linked_file": "%t/common/components/image/image.tmpl",
-      "status": "2"
-    },
-    "LeadText": {
-      "name": "LeadText",
-      "subject": "",
-      "class": "Module",
-      "basename": "lead_text",
-      "linked_file": "%t/common/components/leadText/leadText.tmpl",
-      "status": "2"
-    },
-    "OpenDiv": {
-      "name": "OpenDiv",
-      "subject": "",
-      "class": "Module",
-      "basename": "open_div",
-      "linked_file": "%t/common/components/openDiv/openDiv.tmpl",
-      "status": "2"
-    },
-    "PageHeader": {
-      "name": "PageHeader",
-      "subject": "",
-      "class": "Module",
-      "basename": "page_header",
-      "linked_file": "%t/common/components/pageHeader/pageHeader.tmpl",
-      "status": "2"
-    },
-    "Paragraph": {
-      "name": "Paragraph",
-      "subject": "",
-      "class": "Module",
-      "basename": "paragraph",
-      "linked_file": "%t/common/components/paragraph/paragraph.tmpl",
-      "status": "2"
-    },
-    "RelatedLinks": {
-      "name": "RelatedLinks",
-      "subject": "",
-      "class": "Module",
-      "basename": "related_links",
-      "linked_file": "%t/common/components/relatedLinks/relatedLinks.tmpl",
-      "status": "2"
-    },
-    "Space": {
-      "name": "Space",
-      "subject": "",
-      "class": "Module",
-      "basename": "space",
-      "linked_file": "%t/common/components/space/space.tmpl",
-      "status": "2"
-    },
-    "TextLink": {
-      "name": "TextLink",
-      "subject": "",
-      "class": "Module",
-      "basename": "text_link",
-      "linked_file": "%t/common/components/textLink/textLink.tmpl",
-      "status": "2"
-    },
-    "GlobalFloatingMenu": {
-      "name": "GlobalFloatingMenu",
-      "subject": "",
-      "class": "Module",
-      "basename": "global_floating_menu",
-      "linked_file": "%t/global/components/floatingMenu/floatingMenu.tmpl",
-      "status": "2"
-    },
-    "GlobalFooter": {
-      "name": "GlobalFooter",
-      "subject": "",
-      "class": "Module",
-      "basename": "global_footer",
-      "linked_file": "%t/global/components/footer/footer.tmpl",
-      "status": "2"
-    },
-    "GlobalGlobalNavigation": {
-      "name": "GlobalGlobalNavigation",
-      "subject": "",
-      "class": "Module",
-      "basename": "global_global_navigation",
-      "linked_file": "%t/global/components/globalNavigation/globalNavigation.tmpl",
-      "status": "2"
-    },
-    "GlobalHeader": {
-      "name": "GlobalHeader",
-      "subject": "",
-      "class": "Module",
-      "basename": "global_header",
-      "linked_file": "%t/global/components/header/header.tmpl",
-      "status": "2"
-    },
-    "GlobalSideMenu": {
-      "name": "GlobalSideMenu",
-      "subject": "",
-      "class": "Module",
-      "basename": "global_side_menu",
-      "linked_file": "%t/global/components/sideMenu/sideMenu.tmpl",
-      "status": "2"
-    },
-    "Table": {
-      "name": "Table",
-      "subject": "",
-      "class": "Module",
-      "basename": "table",
-      "linked_file": "%t/common/components/table/table.tmpl",
-      "status": "2"
-    },
-    "template/announcementDetail": {
-      "name": "template/announcementDetail",
-      "subject": "",
-      "class": "Archive",
-      "basename": "template_announcementdetail",
-      "linked_file": "%t/template/announcementDetail/index.tmpl",
-      "status": "2",
-      "urlmappings": [
-        {
-          "name": "Announcement Detail Page",
-          "model": "announcement",
-          "mapping": "announcement/<mt:announcementbasename>.html",
-          "publish_file": "1"
+    "label": "V1",
+    "id": "v1",
+    "version": "1.0",
+    "description": "Custom theme v1",
+    "author": "BitA",
+    "component": "ThemeV1",
+    "publish_theme": true,
+    "views": {
+        "ComponentBlocks": {
+            "name": "ComponentBlocks",
+            "subject": "",
+            "class": "Module",
+            "basename": "component_blocks",
+            "linked_file": "%t/component_blocks.tmpl",
+            "status": "2"
+        },
+        "GlobalVariables": {
+            "name": "GlobalVariables",
+            "subject": "",
+            "class": "Module",
+            "basename": "global_variables",
+            "linked_file": "%t/global_variables.tmpl",
+            "status": "2"
+        },
+        "Row": {
+            "name": "Row",
+            "subject": "",
+            "class": "Module",
+            "basename": "row",
+            "linked_file": "%t/common/components/row/row.tmpl",
+            "status": "2"
+        },
+        "ServiceCard": {
+            "name": "ServiceCard",
+            "subject": "",
+            "class": "Module",
+            "basename": "service_card",
+            "linked_file": "%t/common/components/serviceCard/serviceCard.tmpl",
+            "status": "2"
+        },
+        "Link": {
+            "name": "Link",
+            "subject": "",
+            "class": "Module",
+            "basename": "link",
+            "linked_file": "%t/common/components/link/link.tmpl",
+            "status": "2"
+        },
+        "Annotation": {
+            "name": "Annotation",
+            "subject": "",
+            "class": "Module",
+            "basename": "annotation",
+            "linked_file": "%t/common/components/annotation/annotation.tmpl",
+            "status": "2"
+        },
+        "AnnouncementH2Title": {
+            "name": "AnnouncementH2Title",
+            "subject": "",
+            "class": "Module",
+            "basename": "announcement_h2_title",
+            "linked_file": "%t/common/components/announcementH2Title/announcementH2Title.tmpl",
+            "status": "2"
+        },
+        "ArticleCard": {
+            "name": "ArticleCard",
+            "subject": "",
+            "class": "Module",
+            "basename": "article_card",
+            "linked_file": "%t/common/components/articleCard/articleCard.tmpl",
+            "status": "2"
+        },
+        "ArticleList": {
+            "name": "ArticleList",
+            "subject": "",
+            "class": "Module",
+            "basename": "article_list",
+            "linked_file": "%t/common/components/articleList/articleList.tmpl",
+            "status": "2"
+        },
+        "Breadcrumb": {
+            "name": "Breadcrumb",
+            "subject": "",
+            "class": "Module",
+            "basename": "breadcrumb",
+            "linked_file": "%t/common/components/breadcrumb/breadcrumb.tmpl",
+            "status": "2"
+        },
+        "BulletText": {
+            "name": "BulletText",
+            "subject": "",
+            "class": "Module",
+            "basename": "bullet_text",
+            "linked_file": "%t/common/components/bulletText/bulletText.tmpl",
+            "status": "2"
+        },
+        "Button": {
+            "name": "Button",
+            "subject": "",
+            "class": "Module",
+            "basename": "button",
+            "linked_file": "%t/common/components/button/button.tmpl",
+            "status": "2"
+        },
+        "CheckList": {
+            "name": "CheckList",
+            "subject": "",
+            "class": "Module",
+            "basename": "check_list",
+            "linked_file": "%t/common/components/checkList/checkList.tmpl",
+            "status": "2"
+        },
+        "CheckText": {
+            "name": "CheckText",
+            "subject": "",
+            "class": "Module",
+            "basename": "check_text",
+            "linked_file": "%t/common/components/checkText/checkText.tmpl",
+            "status": "2"
+        },
+        "CloseDiv": {
+            "name": "CloseDiv",
+            "subject": "",
+            "class": "Module",
+            "basename": "close_div",
+            "linked_file": "%t/common/components/closeDiv/closeDiv.tmpl",
+            "status": "2"
+        },
+        "Collapse": {
+            "name": "Collapse",
+            "subject": "",
+            "class": "Module",
+            "basename": "collapse",
+            "linked_file": "%t/common/components/collapse/collapse.tmpl",
+            "status": "2"
+        },
+        "ContactAccordion": {
+            "name": "ContactAccordion",
+            "subject": "",
+            "class": "Module",
+            "basename": "contact_accordion",
+            "linked_file": "%t/common/components/contactAccordion/contactAccordion.tmpl",
+            "status": "2"
+        },
+        "CtaBanner": {
+            "name": "CtaBanner",
+            "subject": "",
+            "class": "Module",
+            "basename": "cta_banner",
+            "linked_file": "%t/common/components/ctaBanner/ctaBanner.tmpl",
+            "status": "2"
+        },
+        "H1": {
+            "name": "H1",
+            "subject": "",
+            "class": "Module",
+            "basename": "h1",
+            "linked_file": "%t/common/components/h1/h1.tmpl",
+            "status": "2"
+        },
+        "H2": {
+            "name": "H2",
+            "subject": "",
+            "class": "Module",
+            "basename": "h2",
+            "linked_file": "%t/common/components/h2/h2.tmpl",
+            "status": "2"
+        },
+        "H3": {
+            "name": "H3",
+            "subject": "",
+            "class": "Module",
+            "basename": "h3",
+            "linked_file": "%t/common/components/h3/h3.tmpl",
+            "status": "2"
+        },
+        "H4": {
+            "name": "H4",
+            "subject": "",
+            "class": "Module",
+            "basename": "h4",
+            "linked_file": "%t/common/components/h4/h4.tmpl",
+            "status": "2"
+        },
+        "H5": {
+            "name": "H5",
+            "subject": "",
+            "class": "Module",
+            "basename": "h5",
+            "linked_file": "%t/common/components/h5/h5.tmpl",
+            "status": "2"
+        },
+        "Image": {
+            "name": "Image",
+            "subject": "",
+            "class": "Module",
+            "basename": "image",
+            "linked_file": "%t/common/components/image/image.tmpl",
+            "status": "2"
+        },
+        "LeadText": {
+            "name": "LeadText",
+            "subject": "",
+            "class": "Module",
+            "basename": "lead_text",
+            "linked_file": "%t/common/components/leadText/leadText.tmpl",
+            "status": "2"
+        },
+        "OpenDiv": {
+            "name": "OpenDiv",
+            "subject": "",
+            "class": "Module",
+            "basename": "open_div",
+            "linked_file": "%t/common/components/openDiv/openDiv.tmpl",
+            "status": "2"
+        },
+        "PageHeader": {
+            "name": "PageHeader",
+            "subject": "",
+            "class": "Module",
+            "basename": "page_header",
+            "linked_file": "%t/common/components/pageHeader/pageHeader.tmpl",
+            "status": "2"
+        },
+        "Paragraph": {
+            "name": "Paragraph",
+            "subject": "",
+            "class": "Module",
+            "basename": "paragraph",
+            "linked_file": "%t/common/components/paragraph/paragraph.tmpl",
+            "status": "2"
+        },
+        "RelatedLinks": {
+            "name": "RelatedLinks",
+            "subject": "",
+            "class": "Module",
+            "basename": "related_links",
+            "linked_file": "%t/common/components/relatedLinks/relatedLinks.tmpl",
+            "status": "2"
+        },
+        "Space": {
+            "name": "Space",
+            "subject": "",
+            "class": "Module",
+            "basename": "space",
+            "linked_file": "%t/common/components/space/space.tmpl",
+            "status": "2"
+        },
+        "TextLink": {
+            "name": "TextLink",
+            "subject": "",
+            "class": "Module",
+            "basename": "text_link",
+            "linked_file": "%t/common/components/textLink/textLink.tmpl",
+            "status": "2"
+        },
+        "GlobalFloatingMenu": {
+            "name": "GlobalFloatingMenu",
+            "subject": "",
+            "class": "Module",
+            "basename": "global_floating_menu",
+            "linked_file": "%t/global/components/floatingMenu/floatingMenu.tmpl",
+            "status": "2"
+        },
+        "GlobalFooter": {
+            "name": "GlobalFooter",
+            "subject": "",
+            "class": "Module",
+            "basename": "global_footer",
+            "linked_file": "%t/global/components/footer/footer.tmpl",
+            "status": "2"
+        },
+        "GlobalNavigation": {
+            "name": "GlobalNavigation",
+            "subject": "",
+            "class": "Module",
+            "basename": "global_navigation",
+            "linked_file": "%t/global/components/globalNavigation/globalNavigation.tmpl",
+            "status": "2"
+        },
+        "GlobalHeader": {
+            "name": "GlobalHeader",
+            "subject": "",
+            "class": "Module",
+            "basename": "global_header",
+            "linked_file": "%t/global/components/header/header.tmpl",
+            "status": "2"
+        },
+        "GlobalSideMenu": {
+            "name": "GlobalSideMenu",
+            "subject": "",
+            "class": "Module",
+            "basename": "global_side_menu",
+            "linked_file": "%t/global/components/sideMenu/sideMenu.tmpl",
+            "status": "2"
+        },
+        "Table": {
+            "name": "Table",
+            "subject": "",
+            "class": "Module",
+            "basename": "table",
+            "linked_file": "%t/common/components/table/table.tmpl",
+            "status": "2"
+        },
+        "template/announcementDetail": {
+            "name": "template/announcementDetail",
+            "subject": "",
+            "class": "Archive",
+            "basename": "template_announcementdetail",
+            "linked_file": "%t/template/announcementDetail/index.tmpl",
+            "status": "2",
+            "urlmappings": [
+                {
+                    "name": "Announcement Detail Page",
+                    "model": "announcement",
+                    "mapping": "announcement/<mt:announcementbasename>.html",
+                    "publish_file": "1"
+                }
+            ]
+        },
+        "layout/page": {
+            "name": "layout/page",
+            "subject": "",
+            "class": "Archive",
+            "basename": "layout_page",
+            "linked_file": "%t/layout/page.tmpl",
+            "status": "2"
         }
-      ]
     }
-  }
 }

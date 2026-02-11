@@ -1,0 +1,14 @@
+<a href="<mt:var name='href'>" class="anchorLink<mt:if name='variant'> anchorLink--<mt:var name='variant'></mt:if><mt:if name='class'> <mt:var name='class'></mt:if><mt:if name='size'> anchorLink--<mt:var name='size'></mt:if>">
+  <span class="anchorLink__text">
+    <mt:var name='text' raw>
+  </span>
+  <mt:if name='variant' eq='anchor'>
+    <img class="anchorLink__icon" src="<mt:var name='theme_path'>/static/assets/ico_arrow_down_S.svg" alt="ico-arrow" />
+  <mt:elseif name='variant' eq="modal">
+    <img class="anchorLink__icon" src="<mt:var name='theme_path'>/static/assets/ico_open_modal_M.svg" alt="ico-arrow" />
+  <mt:elseif name='variant' eq="new_tab">
+    <img class="anchorLink__icon" src="<mt:var name='theme_path'>/static/assets/ico_new_window_M.svg" alt="ico-arrow" />
+  <mt:else>
+    <img class="anchorLink__icon" src="<mt:var name='theme_path'>/static/assets/ico_arrow_L.svg" alt="ico-arrow" />
+  </mt:if>
+</a>

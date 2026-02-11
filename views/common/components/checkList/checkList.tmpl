@@ -1,0 +1,12 @@
+
+<div class="checkList">
+  <mt:loop name="containers">
+    <mt:loop name="blocks">
+      <mt:if name="type" eq="checkText">
+        <mt:var name="blocks" key="$__index__" setvar="__checkText__" scope="local" />
+        <mt:include basename="checkText" text="$__checkText__.text" />
+        <mt:unsetvar name="__checkText__" scope="local" />
+      </mt:if>
+    </mt:loop>
+  </mt:loop>
+</div>

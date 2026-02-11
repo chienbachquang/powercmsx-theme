@@ -1,7 +1,7 @@
 <mt:if name='as' eq='button'>
 <button
   type="button"
-  class="btn<mt:if name='size'> btn--<mt:var name='size'></mt:if><mt:if name='variant'> btn--<mt:var name='variant'></mt:if><mt:if name='class'><mt:var name='class'></mt:if><mt:if name='width' eq='full'> btn--full</mt:if>"
+  class="btn<mt:if name='size'> btn--<mt:var name='size'></mt:if><mt:if name='variant'> btn--<mt:var name='variant'></mt:if><mt:if name='class'> <mt:var name='class'></mt:if><mt:if name='width' eq='full'> btn--full</mt:if>"
   <mt:if name='disabled'> data-disabled="<mt:var name='disabled'>"</mt:if>
   <mt:if name='id'>id="<mt:var name='id'>"</mt:if>
 >
@@ -26,7 +26,7 @@
 <mt:else>
 <a
   href="<mt:var name='href'>"
-  class="btn<mt:if name='size'> btn--<mt:var name='size'></mt:if><mt:if name='variant'> btn--<mt:var name='variant'></mt:if><mt:if name='class'><mt:var name='class'></mt:if><mt:if name='width' eq='full'> btn--full</mt:if>"
+  class="btn<mt:if name='size'> btn--<mt:var name='size'></mt:if><mt:if name='variant'> btn--<mt:var name='variant'></mt:if><mt:if name='class'> <mt:var name='class'></mt:if><mt:if name='width' eq='full'> btn--full</mt:if>"
   <mt:if name='disabled'> data-disabled="<mt:var name='disabled'>"</mt:if>
   <mt:if name='id'> id="<mt:var name='id'>"</mt:if>
   <mt:if name='target'> target="<mt:var name='target'>"</mt:if>

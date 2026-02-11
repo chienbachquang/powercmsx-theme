@@ -1,0 +1,27 @@
+<div class="sectionCard">
+    <mt:include basename="image" class="sectionCard__image" alt="$title" asset_id="$image" />
+  
+  <div class="sectionCard__content">
+    <mt:include basename='link' class='sectionCard__title' text='$title' size='large' href='$href' variant="">
+    <p class="sectionCard__desc">
+      <mt:var name='description' raw>
+    </p>
+
+    
+
+    
+    <mt:if name="containers">
+      <mt:loop name="containers">
+        <mt:loop name="blocks">
+          <mt:var name="blocks" key="$__index__" setvar="__block" scope="local" />
+          <mt:if name="type" value="ButtonDefault">
+            <mt:setvarblock name="__buttonClass">sectionCard__button <mt:var name='__block.class'/></mt:setvarblock>
+            <mt:include basename="button" text="$__block.text" href="$__block.href" size="$__block.size" class="$__buttonClass" icon="$__block.icon" />
+          </mt:if>
+          <mt:unsetvar name="__block" scope="local" />
+        </mt:loop>
+      </mt:loop>
+    </mt:if>
+    
+  </div>
+</div>

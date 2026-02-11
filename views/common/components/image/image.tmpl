@@ -1,5 +1,5 @@
-<mt:if name="data">
-  <mt:assets type="image" limit="1" id="$imageId">
-    <img class="image" src="<mt:asseturl>" alt="<mt:assetlabel>">
-  </mt:assets>
-</mt:if>
+<mt:vardump name="class" />
+<mt:var name="class" setvar="__image_class" scope="local" />
+<mt:assets type="image" limit="1" id="$asset_id">
+  <img class="image<mt:if name='__image_class'> <mt:var name='__image_class'/></mt:if>" src="<mt:asseturl>" alt="<mt:assetlabel>">
+</mt:assets>
