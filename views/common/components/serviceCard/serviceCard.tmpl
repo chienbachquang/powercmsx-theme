@@ -1,27 +1,45 @@
-<div class="sectionCard">
-    <mt:include basename="image" class="sectionCard__image" alt="$title" asset_id="$image" />
+<div class="serviceCard">
+  <mt:if name="image">
+    <mt:assets type="image" limit="1" id="$image">
+      <img class="serviceCard__image" src="<mt:asseturl>" alt="<mt:assetlabel>">
+    </mt:assets>
+  <mt:else>
+    <div class="serviceCard__image"></div>
+  </mt:if>
   
-  <div class="sectionCard__content">
-    <mt:include basename='link' class='sectionCard__title' text='$title' size='large' href='$href' variant="">
-    <p class="sectionCard__desc">
+  <div class="serviceCard__content">
+    <mt:include
+      basename='link'
+      class='serviceCard__title'
+      text='$title'
+      size='large'
+      href='$href'
+      variant=''
+      width='fit'
+    >
+    <p class="serviceCard__desc">
       <mt:var name='description' raw>
     </p>
-
     
-
-    
-    <mt:if name="containers">
-      <mt:loop name="containers">
-        <mt:loop name="blocks">
-          <mt:var name="blocks" key="$__index__" setvar="__block" scope="local" />
-          <mt:if name="type" value="ButtonDefault">
-            <mt:setvarblock name="__buttonClass">sectionCard__button <mt:var name='__block.class'/></mt:setvarblock>
-            <mt:include basename="button" text="$__block.text" href="$__block.href" size="$__block.size" class="$__buttonClass" icon="$__block.icon" />
-          </mt:if>
-          <mt:unsetvar name="__block" scope="local" />
-        </mt:loop>
+    <mt:loop name="containers" hash item="container">
+      <mt:loop name="container.blocks" hash item="block">
+        <mt:if name="block.type" value="ButtonDefault">
+          <mt:setvar name="button_data" value="$block"/>
+          <mt:setvarblock name="button_data" key="class">serviceCard__button <mt:var name="block" key="class"/></mt:setvarblock>
+          <mt:include
+            basename="button"
+            text="$button_data.text"
+            href="$button_data.href"
+            size="$button_data.size"
+            icon="$button_data.icon"
+            width="$button_data.width"
+            variant="$button_data.variant"
+            class="$button_data.class"
+          />
+          <mt:unsetvar name="button_data" />
+        </mt:if>
       </mt:loop>
-    </mt:if>
+    </mt:loop>
     
   </div>
 </div>

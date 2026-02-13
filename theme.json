@@ -7,6 +7,14 @@
     "component": "ThemeV1",
     "publish_theme": true,
     "views": {
+        "layout/page": {
+            "name": "layout/page",
+            "subject": "",
+            "class": "Archive",
+            "basename": "layout_page",
+            "linked_file": "%t/layout/page.tmpl",
+            "status": "2"
+        },
         "ComponentBlocks": {
             "name": "ComponentBlocks",
             "subject": "",
@@ -141,6 +149,14 @@
             "class": "Module",
             "basename": "contact_accordion",
             "linked_file": "%t/common/components/contactAccordion/contactAccordion.tmpl",
+            "status": "2"
+        },
+        "ContactAccordionSection": {
+            "name": "ContactAccordionSection",
+            "subject": "",
+            "class": "Module",
+            "basename": "contact_accordion_section",
+            "linked_file": "%t/common/components/contactAccordionSection/contactAccordionSection.tmpl",
             "status": "2"
         },
         "CtaBanner": {
@@ -303,28 +319,20 @@
             "linked_file": "%t/common/components/table/table.tmpl",
             "status": "2"
         },
-        "template/announcementDetail": {
-            "name": "template/announcementDetail",
+        "LinkWithinContentIconTextBtn": {
+            "name": "LinkWithinContentIconTextBtn",
             "subject": "",
-            "class": "Archive",
-            "basename": "template_announcementdetail",
-            "linked_file": "%t/template/announcementDetail/index.tmpl",
-            "status": "2",
-            "urlmappings": [
-                {
-                    "name": "Announcement Detail Page",
-                    "model": "announcement",
-                    "mapping": "announcement/<mt:announcementbasename>.html",
-                    "publish_file": "1"
-                }
-            ]
+            "class": "Module",
+            "basename": "link_within_content_icon_text_btn",
+            "linked_file": "%t/common/components/linkWithinContentIconTextBtn/linkWithinContentIconTextBtn.tmpl",
+            "status": "2"
         },
-        "layout/page": {
-            "name": "layout/page",
+        "Remark": {
+            "name": "Remark",
             "subject": "",
-            "class": "Archive",
-            "basename": "layout_page",
-            "linked_file": "%t/layout/page.tmpl",
+            "class": "Module",
+            "basename": "remark",
+            "linked_file": "%t/common/components/remark/remark.tmpl",
             "status": "2"
         }
     }

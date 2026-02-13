@@ -1,79 +1,94 @@
-<mt:loop name="components_blocks">
-  <mt:var name="components_blocks" key="$__index__" setvar="__block__" scope="local" />
-  <mt:if name="type" eq="GlobalHeader">
+<mt:loop name="components_blocks" hash>
+  <mt:if name="__value__.type" eq="GlobalHeader">
     <mt:include basename="global_header">
   </mt:if>
-  <mt:if name="type" eq="GlobalNavigation">
+  <mt:if name="__value__.type" eq="GlobalNavigation">
     <mt:include basename="global_navigation">
   </mt:if>
-  <mt:if name="type" eq="GlobalSideMenu">
+  <mt:if name="__value__.type" eq="GlobalSideMenu">
     <mt:include basename="global_side_menu">
   </mt:if>
-  <mt:if name="type" eq="GlobalFooter">
+  <mt:if name="__value__.type" eq="GlobalFooter">
     <mt:include basename="global_footer">
   </mt:if>
-  <mt:if name="type" eq="Breadcrumb">
-    <mt:include basename="breadcrumb" data="$__block__.fields">
+  <mt:if name="__value__.type" eq="Breadcrumb">
+    <mt:include basename="breadcrumb" data="$__value__.fields">
   </mt:if>
-  <mt:if name="type" eq="OpenDiv">
-    <mt:include basename="open_div" class="$__block__.class">
+  <mt:if name="__value__.type" eq="OpenDiv">
+    <mt:include basename="open_div" class="$__value__.class">
   </mt:if>
-  <mt:if name="type" eq="CloseDiv">
+  <mt:if name="__value__.type" eq="CloseDiv">
     <mt:include basename="close_div">
   </mt:if>
-  <mt:if name="type" eq="H1">
-    <mt:include basename="h1" content="$__block__.content" class="$__block__.class">
+  <mt:if name="__value__.type" eq="H1">
+    <mt:include basename="h1" content="$__value__.content" class="$__value__.class">
   </mt:if>
-  <mt:if name="type" eq="H2">
-    <mt:include basename="h2" content="$__block__.content">
+  <mt:if name="__value__.type" eq="H2">
+    <mt:include basename="h2" content="$__value__.content" class="$__value__.class">
   </mt:if>
-  <mt:if name="type" eq="H3">
-    <mt:include basename="h3" content="$__block__.content">
+  <mt:if name="__value__.type" eq="H3">
+    <mt:include basename="h3" content="$__value__.content" class="$__value__.class">
   </mt:if>
-  <mt:if name="type" eq="AnnouncementH2Title">
-    <mt:include basename="announcement_h2_title" content="$__block__.content" class="$__block__.class" date="$__block__.date">
+  <mt:if name="__value__.type" eq="AnnouncementH2Title">
+    <mt:include basename="announcement_h2_title" content="$__value__.content" class="$__value__.class" date="$__value__.date">
   </mt:if>
-  <mt:if name="type" eq="CheckList">
-    <mt:include basename="check_list">
+  <mt:if name="__value__.type" eq="CheckList">
+    <mt:include basename="check_list" containers="$__value__.containers">
   </mt:if>
-  <mt:if name="type" eq="Image">
-    <mt:include basename="image" asset_id="$__block__.asset_id">
+  <mt:if name="__value__.type" eq="Image">
+    <mt:include basename="image" asset_id="$__value__.asset_id">
   </mt:if>
-  <mt:if name="type" eq="Space">
-    <mt:include basename="space" height="$__block__.height">
+  <mt:if name="__value__.type" eq="Space">
+    <mt:include basename="space" height="$__value__.height">
   </mt:if>
-  <mt:if name="type" eq="Paragraph">
-    <mt:include basename="paragraph" content="$__block__.content" class="$__block__.class">
+  <mt:if name="__value__.type" eq="Paragraph">
+    <mt:include basename="paragraph" content="$__value__.content" class="$__value__.class">
   </mt:if>
-  <mt:if name="type" eq="Table">
-    <mt:include basename="table" data="$__block__.table" class="$__block__.class">
+  <mt:if name="__value__.type" eq="Table">
+    <mt:include basename="table" data="$__value__.table" class="$__value__.class">
   </mt:if>
-  <mt:if name="type" eq="TextLink">
-    <mt:include basename="text_link" data="$__block__.data" class="$__block__.class">
+  <mt:if name="__value__.type" eq="TextLink">
+    <mt:include basename="text_link" data="$__value__.data" class="$__value__.class">
   </mt:if>
-  <mt:if name="type" eq="Annotation">
-    <mt:include basename="annotation" content="$__block__.content" class="$__block__.class">
+  <mt:if name="__value__.type" eq="Annotation">
+    <mt:include basename="annotation" content="$__value__.content" class="$__value__.class">
   </mt:if>
-  <mt:if name="type" eq="BtnOutlineIconOrCaption">
-    <mt:include basename="button" text="$__block__.text" caption="$__block__.caption" icon="$__block__.icon" variant="outline-icon" href="$__block__.href" as="$__block__.as">
+  <mt:if name="__value__.type" eq="BtnOutlineIconOrCaption">
+    <mt:include basename="button" text="$__value__.text" caption="$__value__.caption" icon="$__value__.icon" variant="outline-icon" href="$__value__.href" as="$__value__.as">
   </mt:if>
-  <mt:if name="type" eq="BulletText">
-    <mt:include basename="bullet_text" content="$__block__.content">
+  <mt:if name="__value__.type" eq="BulletText">
+    <mt:include basename="bullet_text" content="$__value__.content">
   </mt:if>
-  <mt:if name="type" eq="Row">
-    <mt:include basename="row">
+  <mt:if name="__value__.type" eq="Row">
+    <mt:include
+      basename="row"
+      containers="$__value__.containers"
+      gap="$__value__.gap"
+      gap_x="$__value__.gap_x"
+      gap_y="$__value__.gap_y"
+    >
   </mt:if>
-  <mt:if name="type" eq="LeadText">
-    <mt:include basename="lead_text" content="$__block__.content">
+  <mt:if name="__value__.type" eq="LeadText">
+    <mt:include basename="lead_text" content="$__value__.content">
   </mt:if>
-  <mt:if name="type" eq="AnchorLink">
-    <mt:include basename="link" text="$__block__.text" href="$__block__.href" class="$__block__.class" type="anchor">
+  <mt:if name="__value__.type" eq="AnchorLink">
+    <mt:include basename="link" text="$__value__.text" href="$__value__.href" class="$__value__.class" type="anchor">
   </mt:if>
-  <mt:if name="type" eq="ButtonDefault">
-    <mt:include basename="button" text="$__block__.text" href="$__block__.href" class="$__block__.class">
+  <mt:if name="__value__.type" eq="ButtonDefault">
+    <mt:include basename="button" text="$__value__.text" href="$__value__.href" class="$__value__.class" width="$__value__.width">
   </mt:if>
-  <mt:if name="type" eq="ServiceCard">
-    <mt:include basename="service_card" image="$__block__.image" title="$__block__.title" description="$__block__.description" href="$__block__.href">
+  <mt:if name="__value__.type" eq="ServiceCard">
+    <mt:include basename="service_card" image="$__value__.image" title="$__value__.title" description="$__value__.description" href="$__value__.href" containers="$__value__.containers" class="$__value__.class">
   </mt:if>
-  <mt:unsetvar name="__block__" />
+  <mt:if name="__value__.type" eq="LinkWithinContentIconTextBtn">
+    <mt:include basename="link_within_content_icon_text_btn" title="$__value__.title" icon="$__value__.icon" caption="$__value__.caption" class="$__value__.class" containers="$__value__.containers">
+  </mt:if>
+  <mt:if name="__value__.type" eq="ContactAccordion">
+    <mt:include
+      basename="contact_accordion"
+      heading_icon="$__value__.heading_icon"
+      heading_text="$__value__.heading_text"
+      containers="$__value__.containers"
+    />
+  </mt:if>
 </mt:loop>

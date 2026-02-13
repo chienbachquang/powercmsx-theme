@@ -1,0 +1,43 @@
+<div class="linkWithinContentIconTextBtn">
+  <div class="linkWithinContentIconTextBtn__main">
+    <mt:if name='icon'>
+      <mt:assets type="image" limit="1" id="$icon">
+        <img class="linkWithinContentIconTextBtn__icon" src="<mt:asseturl>" alt="<mt:assetlabel>">
+      </mt:assets>
+    </mt:if>
+    <div class="linkWithinContentIconTextBtn__content">
+      <mt:if name="title">
+        <h4 class="linkWithinContentIconTextBtn__title">
+          <mt:var name="title" raw/>
+        </h4>
+      </mt:if>
+      <mt:if name="caption">
+        <p class="linkWithinContentIconTextBtn__caption">
+          <mt:var name="caption" raw/>
+        </p>
+      </mt:if>
+      </div>
+    </div>
+
+    <mt:loop name="containers" hash item='container'>
+      <mt:loop name="container.blocks" hash item='block'>
+        <mt:if name="block.type" eq="ButtonDefault">
+          <mt:setvar name="button_data" value="$block"/>
+          <mt:setvarblock name="button_data" key="class">linkWithinContentIconTextBtn__button <mt:var name="block" key="class"/></mt:setvarblock>
+          <mt:include
+            basename="button"
+            text="$button_data.text"
+            href="$button_data.href"
+            size="$button_data.size"
+            icon="$button_data.icon"
+            width="$button_data.width"
+            variant="$button_data.variant"
+            class="$button_data.class"
+            as="$button_data.as"
+            caption="$button_data.caption"
+          />
+          <mt:unsetvar name="button_data" />
+        </mt:if>
+      </mt:loop>
+    </mt:loop>
+  </div>

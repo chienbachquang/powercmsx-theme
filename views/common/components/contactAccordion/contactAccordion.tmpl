@@ -1,63 +1,31 @@
-<div class="contactAccordion collapse__container js-contact-accordion<mt:if name='isExpanded'> is-expanded</mt:if>">
+<div class="contactAccordion collapse__container js-contact-accordion is-expanded">
   <div class="contactAccordion__heading" data-js="collapse_trigger">
-    <img class="contactAccordion__headingIcon" src="<mt:var name='iconUrl'>" alt="<mt:var name='title'>">
+    <mt:assets type="image" limit="1" id="$heading_icon">
+      <img class="contactAccordion__headingIcon" src="<mt:asseturl>" alt="<mt:assetlabel>">
+    </mt:assets>
     <span class="contactAccordion__headingText">
-      <mt:var name='title' raw>
+      <mt:var name='heading_text' raw>
     </span>
     <span class="contactAccordion__actionButton">
     </span>
   </div>
   <div class="collapse__content">
     <div class="contactAccordion__content collapse__inner">
-      <mt:loop name='sections'>
-        <div class="contactAccordion__section">
-          <mt:if name='h3'>
-            <mt:include basename='common_components_h3' content='$h3'>
+      <mt:loop name="containers" hash item="container">
+        <mt:loop name="container.blocks" hash item="block">
+          <mt:if name="block.type" eq="ContactAccordionSection">
+            <mt:include basename="contact_accordion_section"
+              h3="$block.h3"
+              h5="$block.h5"
+              phone_number="$block.phone_number"
+              contact_more_url="$block.contact_more_url"
+              working_time="$block.working_time"
+              notes="$block.notes"
+              containers="$block.containers"
+              qr_image="$block.qr_image"
+            >
           </mt:if>
-          <mt:if name='h5'>
-            <mt:include basename='common_components_h5' content='$h5' class='contactAccordion__contentHeading'>
-          </mt:if>
-          <mt:if name='phoneNumber'>
-            <div class="contactAccordion__contact">
-              <img class="contactAccordion__contactIcon" src="<mt:var name='theme_path'>/static/assets/ico_inquiry_contact.svg" alt="Contact icon" />
-              <a href="tel:<mt:var name='phoneNumber'>" class="contactAccordion__contactNumber"><b><mt:var name='phoneNumber'></b></a>
-              <mt:if name='contactMoreUrl'>
-                <a
-                  href="<mt:var name='contactMoreUrl'>"
-                  class="contactAccordion__contactMore"
-                >
-                  <span>ご用件番号について</span>
-                  <img src="<mt:var name='theme_path'>/static/assets/ico_plus_circle_m.svg" alt="Arrow Right Icon" />
-                </a>
-              </mt:if>
-            </div>
-          </mt:if>
-          <mt:if name='time'>
-            <p class="contactAccordion__contactTime">
-              <mt:var name='time' raw>
-            </p>
-          </mt:if>
-          <mt:if name='notes'>
-            <ul class="contactAccordion__noteList">
-              <mt:loop name='notes'>
-                <li class="contactAccordion__note">
-                  <span>※</span>
-                  <span><mt:var name='__value__' raw></span>
-                </li>
-              </mt:loop>
-            </ul>
-          </mt:if>
-          <mt:if name='(or ctaElements qrImageUrl)'>
-            <div class="contactAccordion__ctaElements<mt:if name='qrImageUrl'> contactAccordion__ctaElements--with-qr</mt:if>">
-              <mt:loop name='ctaElements'>
-                <mt:include basename='common_components_button' this='1' class='contactAccordion__ctaButton'>
-              </mt:loop>
-              <mt:if name='qrImageUrl'>
-                <img class="contactAccordion__qrImage" src="<mt:var name='qrImageUrl'>" alt="qr">
-              </mt:if>
-            </div>
-          </mt:if>
-        </div>
+        </mt:loop>
       </mt:loop>
     </div>
   </div>

@@ -1,0 +1,11 @@
+<mt:if name="as" eq="li">
+<li class="remark<mt:if name='class'> <mt:var name='class' /></mt:if>">
+  <span>※</span>
+  <mt:var name="content" raw />
+</li>
+<mt:else>
+<p class="remark<mt:if name='class'> <mt:var name='class' /></mt:if>">
+  <span>※</span>
+  <mt:var name="content" raw />
+</p>
+</mt:if>

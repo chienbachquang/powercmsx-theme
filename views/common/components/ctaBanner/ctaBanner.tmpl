@@ -18,7 +18,11 @@
       </mt:if>
       <div class="ctaBanner__content">
         <mt:if name='title'>
-          <mt:include basename='common_components_h4' class='ctaBanner__title' content='$title'>
+          <mt:include
+            basename='h4'
+            class='ctaBanner__title'
+            content='$title'
+          >
         </mt:if>
         <div class="ctaBanner__caption">
           <mt:var name='caption' raw>
@@ -26,7 +30,11 @@
       </div>
     </div>
     <mt:if name='ctaButton'>
-      <mt:include basename='common_components_button' ctaButton='1' class='ctaBanner__ctaButton'>
+      <mt:include
+        basename='button'
+        ctaButton='1'
+        class='ctaBanner__ctaButton'
+      >
     </mt:if>
   </div>
 </div>

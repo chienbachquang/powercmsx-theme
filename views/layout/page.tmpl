@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><mt:pagetitle></title>
-  <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/common/common.css" />
+  <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/common/styles.css" />
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/global/components/header/header.css" />
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/global/components/footer/footer.css" />
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/global/components/globalNavigation/globalNavigation.css" />
   <link rel="stylesheet" href="<mt:var name='theme_path'/>/static/css/global/components/sideMenu/sideMenu.css" />
+</head>
   <body>
-<mt:pageblockedit from_json="components_blocks">
-<mt:include basename="component_blocks">
-<link rel="stylesheet" href="<mt:var name='theme_path'/>/static/assets/common.ts" />
-</body>
+    <mt:pageblockedit from_json="components_blocks">
+    <mt:include basename="component_blocks">
+    <script type="module" src="<mt:var name='theme_path'/>/static/js/common/script.js"></script>
+  </body>
 </html>

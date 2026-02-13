@@ -1,0 +1,79 @@
+<div class="contactAccordion__section">
+  <mt:if name="h3">
+    <mt:include
+      basename="h3"
+      content="$h3"
+      class=""
+    />
+  </mt:if>
+  <mt:if name="h5">
+    <mt:include
+      basename="h5"
+      content="$h5"
+      class=""
+    />
+  </mt:if>
+  <mt:if test="($phone_number || $contact_more_url)">
+    <div class="contactAccordion__contact">
+      <mt:if name="phone_number">
+        <img class="contactAccordion__contactIcon" src="<mt:var name='theme_path'/>/static/assets/kumiaiin/service/ico_inquiry_contact.svg" alt="Contact icon" />
+        <a href="tel:<mt:var name='phone_number' />" class="contactAccordion__contactNumber"><b><mt:var name='phone_number' /></b></a>
+      </mt:if>
+      <mt:if name="contact_more_url">
+        <a
+          href="<mt:var name='contact_more_url' />"
+          class="contactAccordion__contactMore"
+        >
+          <span>ご用件番号について</span>
+          <img src="<mt:var name='theme_path'/>/static/assets/kumiaiin/service/ico_plus_circle_m.svg" alt="Arrow Right Icon" />
+        </a>
+      </mt:if>
+    </div>
+  </mt:if>
+  <mt:if name="working_time">
+    <p class="contactAccordion__workingTime">
+      <mt:var name="working_time" raw/>
+    </p>
+  </mt:if>
+  <mt:if name="notes">
+    <ul class="contactAccordion__noteList">
+      <mt:var name="notes" split="\n" setvar="notes" />
+      <mt:loop name="notes" hash item="note">
+        <mt:include
+          basename="remark"
+          class="contactAccordion__note"
+          content="$note"
+          as="li"
+        />
+      </mt:loop>
+    </ul>
+  </mt:if>
+  <mt:if test="($containers || $qr_image)">
+    <div class="contactAccordion__ctaElements<mt:if name='qr_image'> contactAccordion__ctaElements--with-qr</mt:if>"> 
+      <mt:loop name="containers" hash item="container">
+        <mt:loop name="container.blocks" hash item="block">
+          <mt:if name="block.type" eq="ButtonDefault">
+            <mt:setvar name="button_data" value="$block"/>
+            <mt:setvarblock name="button_data" key="class">contactAccordion__ctaButton <mt:var name="block" key="class"/></mt:setvarblock>
+            <mt:include
+              basename="button"
+              text="$button_data.text"
+              href="$button_data.href"
+              size="$button_data.size"
+              icon="$button_data.icon"
+              width="$button_data.width"
+              variant="$button_data.variant"
+              class="$button_data.class"
+            />
+            <mt:unsetvar name="button_data" />
+          </mt:if>
+        </mt:loop>
+      </mt:loop>
+      <mt:if name="qr_image">
+        <mt:assets type="image" limit="1" id="$qr_image">
+          <img class="contactAccordion__qrImage" src="<mt:asseturl>" alt="<mt:assetlabel>">
+        </mt:assets>
+      </mt:if>
+    </div>
+  </mt:if>
+</div>
