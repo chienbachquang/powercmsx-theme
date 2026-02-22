@@ -14,9 +14,9 @@ class ThemeV1
     $views = isset($theme['views']) ? $theme['views'] : [];
     $new_views = [];
     foreach ($views as $uuid => $view) {
-      $workspaces = isset($view['workspaces']) ? $view['workspaces'] : ['Test'];
+      $workspaces = isset($view['workspaces']) ? $view['workspaces'] : [''];
       if (!is_array($workspaces)) {
-        $workspaces = $workspaces ? [$workspaces] : ['Test'];
+        $workspaces = $workspaces ? [$workspaces] : [''];
       }
       $workspaces = array_filter($workspaces);
 
